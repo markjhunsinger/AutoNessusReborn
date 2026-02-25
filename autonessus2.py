@@ -8,7 +8,7 @@
 #  Requires Python 3.x and requests    #
 #  module                              #
 #                                      #
-#  Original Copyright (C) 2016        #
+#  Original Copyright (C) 2016         #
 #  Matt Grandy                         #
 #  Email: grandy[at]redteamsecure.com  #
 #                                      #
