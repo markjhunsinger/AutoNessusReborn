@@ -43,7 +43,7 @@ group.add_argument('-sR', '--resume', dest='resume_scan_id',  type=str,         
 group.add_argument('-pS', '--pause',  dest='pause_scan_id',   type=str,            help='Pause a specified scan using scan id')
 group.add_argument('-sP', '--stop',   dest='stop_scan_id',    type=str,            help='Stop a specified scan using scan id')
 parser.add_argument('-c', '--config', dest='config_file',     type=str,
-					default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'nessus.conf'),
+					default=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'autonessus.conf'),
 					help='Path to config file (default: nessus.conf in script directory)')
 
 args = parser.parse_args()
