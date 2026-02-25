@@ -69,7 +69,7 @@ def load_config(config_path):
 	config = configparser.ConfigParser()
 	config.read(config_path)
 
-	if 'nessus' not in config:
+	if 'autonessus' not in config:
 		print('Config file is missing the [autonessus] section: {}'.format(config_path))
 		exit()
 
