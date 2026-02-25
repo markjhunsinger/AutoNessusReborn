@@ -4,6 +4,8 @@ AutoNessusReborn communicates with the Nessus API to help with automating scans.
 AutoNessusReborn is based on the original [AutoNessus](https://github.com/deepseasred/AutoNessus) script but has been completely rewritten to use Python3.
 
 ## Usage
+Set the url, username, and password within the `autonessus.conf` file, then run:
+
 `python autoNessus.py -h`
 
 ## Examples
