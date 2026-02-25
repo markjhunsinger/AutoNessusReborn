@@ -58,7 +58,7 @@ def load_config(config_path):
 	if not os.path.exists(config_path):
 		print('Config file not found: {}'.format(config_path))
 		print('Please create a config file with the following format:\n')
-		print('  [nessus]')
+		print('  [autonessus]')
 		print('  url = https://localhost:8834')
 		print('  username = your_username')
 		print('  password = your_password')
@@ -70,10 +70,10 @@ def load_config(config_path):
 	config.read(config_path)
 
 	if 'nessus' not in config:
-		print('Config file is missing the [nessus] section: {}'.format(config_path))
+		print('Config file is missing the [autonessus] section: {}'.format(config_path))
 		exit()
 
-	section = config['nessus']
+	section = config['autonessus']
 	required_keys = ['url', 'username', 'password']
 	for key in required_keys:
 		if key not in section or not section[key].strip():
