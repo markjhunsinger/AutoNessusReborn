@@ -3,15 +3,15 @@ AutoNessusReborn communicates with the Nessus API to help with automating scans.
 
 AutoNessusReborn is based on the original [AutoNessus](https://github.com/deepseasred/AutoNessus) script but has been completely rewritten to use Python3.
 
+## Installation
+```
+git clone https://github.com/markjhunsinger/AutoNessusReborn.git
+cd AutoNessusReborn
+chmod +x autonessus2.py
+```
+Edit the `autonessus.conf` file with your Nessus details.
+
 ## Usage
-Clone the repo.
-
-`git clone https://github.com/markjhunsinger/AutoNessusReborn.git`
-
-Edit the `autonessus.conf` file.
-
-Run the script.
-
 `python autoNessus.py -h`
 
 ## Examples
