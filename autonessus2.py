@@ -66,7 +66,7 @@ def load_config(config_path):
 		print('Tip: Run "chmod 600 {}" to restrict access to the file.'.format(config_path))
 		exit()
 
-	config = configparser.ConfigParser()
+	config = configparser.ConfigParser(interpolation=None)
 	config.read(config_path)
 
 	if 'autonessus' not in config:
